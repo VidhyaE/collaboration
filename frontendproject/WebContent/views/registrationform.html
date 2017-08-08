@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+<span style="color:red">{{error.message}}</span>
+<form>
+<br>
+<br>
+	
+<div class="col-md-10">
+<div class="form-group">
+Enter UserName: <input type="text" ng-model="user.username" class="form-control" placeholder="Enter UserName">
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+Enter FirstName: <input type="text" ng-model="user.firstname" class="form-control" placeholder="Enter FirstName">
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+Enter LastName: <input type="text" ng-model="user.lastname" class="form-control" placeholder="Enter LastName">
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+Enter Email: <input type="text" ng-model="user.email" class="form-control" placeholder="Enter Email">
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+Enter Password :<input type="password" ng-model="user.password" class="form-control" placeholder="Enter Password">
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+Select Role<input type="radio" ng-model="user.role"  value="Student"> Student
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+<input type="radio" ng-model="user.role" value="Alumini"> Alumini
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+<input type="radio" ng-model="user.role"  value="Employee"> Employe
+</div>
+</div>
+<br>
+<br>
+<div class="col-md-10">
+<div class="form-group">
+<input type="submit" ng-click="register()" class="form-control">
+</div>
+</div>
+<br>
+<br>
+</form>
+</div>
+</body>
+</html>
