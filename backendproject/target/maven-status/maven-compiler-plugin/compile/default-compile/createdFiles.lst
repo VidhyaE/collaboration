@@ -2,12 +2,17 @@ com\backendproject\dao\UsersDaoImpl.class
 com\backendproject\model\Friend.class
 com\backendproject\controller\UserController.class
 com\backendproject\dao\UsersDao.class
+com\backendproject\model\ForumComment.class
+com\backendproject\model\ForumPost.class
+com\backendproject\dao\ForumPostDaoImpl.class
 com\backendproject\controller\JobController.class
 com\backendproject\controller\ProfilePictureController.class
 com\backendproject\model\Users.class
+com\backendproject\controller\ForumController.class
 com\backendproject\model\Job.class
 com\backendproject\dao\ProfilePictureDao.class
 com\backendproject\dao\FriendDaoImpl.class
+com\backendproject\dao\ForumPostDao.class
 com\backendproject\model\Chat.class
 com\backendproject\controller\SockController.class
 com\backendproject\dao\FriendDao.class
