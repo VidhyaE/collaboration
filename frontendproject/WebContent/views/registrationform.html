@@ -36,6 +36,10 @@ Enter LastName: <input type="text" ng-model="user.lastname" class="form-control"
 <div class="col-md-10">
 <div class="form-group">
 Enter Email: <input type="text" ng-model="user.email" class="form-control" placeholder="Enter Email">
+<span style="color:red" ng-show="user.email.$dirty && user.email.$invalid">
+<span ng-show="user.email.$error.required">Email is required.</span>
+<span ng-show="user.email.$error.email">Invalid email address.</span>
+</span>
 </div>
 </div>
 <br>
@@ -70,7 +74,8 @@ Select Role<input type="radio" ng-model="user.role"  value="Student"> Student
 <br>
 <div class="col-md-10">
 <div class="form-group">
-<input type="submit" ng-click="register()" class="form-control">
+<input type="submit" ng-click="register()" class="form-control" ng-disabled="user.$dirty && user.$invalid ||  
+user.email.$dirty && user.email.$invalid">>
 </div>
 </div>
 <br>
