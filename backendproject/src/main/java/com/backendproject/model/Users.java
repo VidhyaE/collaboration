@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 //import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+//import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
@@ -18,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class Users { // it will not map this user class with table user
 	@Id
 private String username;
-	@NotNull(message=" name is mandatory")	
+	@NotNull(message=" name is mandatory")
 private String firstname;
 	@NotNull(message=" name is mandatory")
 private String lastname;
@@ -29,7 +30,7 @@ private String lastname;
 @Pattern(regexp="^.+@.+\\..+$")
 private String email;
 
-@Size(min=7,max=10)
+@Size(min=3,max=10)
 private String password;
 private String role;
 private boolean enabled;
