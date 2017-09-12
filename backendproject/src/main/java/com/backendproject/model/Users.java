@@ -18,8 +18,9 @@ import org.springframework.stereotype.Component;
 public class Users { // it will not map this user class with table user
 	@Id
 private String username;
-	@Column	
+	@NotNull(message=" name is mandatory")	
 private String firstname;
+	@NotNull(message=" name is mandatory")
 private String lastname;
 
 @Column(name="EMAIL", length=50)
@@ -27,6 +28,8 @@ private String lastname;
 @Size(min=7,max=50)
 @Pattern(regexp="^.+@.+\\..+$")
 private String email;
+
+@Size(min=7,max=10)
 private String password;
 private String role;
 private boolean enabled;
